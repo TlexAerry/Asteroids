@@ -3,6 +3,7 @@
 My version of the classic Asteroids game. Base game is complete. Next steps are:
 
     Add a scoring system
+    Implement proper UI (pause, exit/close)
     Implement multiple lives and respawning
     Add an explosion effect for the asteroids
     Add acceleration to the player movement
