@@ -4,6 +4,7 @@ from player import *
 from circleshape import *
 from asteroids import *
 from AsteroidField import * 
+import sys
 
 
 def main():
@@ -35,6 +36,11 @@ def main():
         screen.fill((0,0,0))
         updateable.update(dt)
         
+        for ast in Asteroids:
+            if ast.collision(player1) == True:
+                print("Game Over!")
+                sys.exit()
+
         for object in drawable:
             object.draw(screen)
         
