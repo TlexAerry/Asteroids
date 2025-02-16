@@ -46,7 +46,7 @@ def main():
             for bullet in bullets:
                 if ast.collision(bullet) == True:
                     bullet.kill()
-                    ast.kill()
+                    ast.split()
 
         for object in drawable:
             object.draw(screen)
