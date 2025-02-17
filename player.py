@@ -58,5 +58,5 @@ class player(CircleShape):
         new_shot.velocity *= PLAYER_SHOT_SPEED
 
     def respawn(self):
-        self.position= pygame.Vector2(SCREEN_WIDTH/2,SCREEN_HEIGHT/2)
+        self.position = pygame.Vector2(SCREEN_WIDTH/2,SCREEN_HEIGHT/2)
         

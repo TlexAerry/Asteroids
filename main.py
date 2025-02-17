@@ -47,7 +47,6 @@ def main():
                 else:
                     print("Game Over!")    
                     sys.exit()
-        # need to reset player location to center
 
         for ast in Asteroids:
             for bullet in bullets:
@@ -60,8 +59,6 @@ def main():
         
         pygame.display.flip()  
         dt = clock.tick(60) / 1000
-
-
 
 if __name__ == "__main__":
     main()
