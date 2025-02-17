@@ -39,8 +39,15 @@ def main():
         
         for ast in Asteroids:
             if ast.collision(player1) == True:
-                print("Game Over!")
-                sys.exit()
+                for ast2 in Asteroids:
+                    ast2.kill()               
+                if player1.lives > 1:
+                    player1.lives -= 1
+                    player1.respawn() 
+                else:
+                    print("Game Over!")    
+                    sys.exit()
+        # need to reset player location to center
 
         for ast in Asteroids:
             for bullet in bullets:
